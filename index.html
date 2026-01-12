@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Discord Nitro</title>
+
+<meta property="og:title" content="🎁 Discord Nitro">
+<meta property="og:description" content="Quelqu’un t’a offert Discord Nitro (1 mois)">
+<meta property="og:image" content="https://i.imgur.com/8kmZQXb.png">
+<meta property="og:type" content="website">
+
+<style>
+body {
+    background-color: #2b2d31;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background: #1e1f22;
+    padding: 30px;
+    border-radius: 12px;
+    width: 360px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+button {
+    background: #5865F2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background: #4752c4;
+}
+.small {
+    font-size: 12px;
+    color: #b5bac1;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="card" id="box">
+    <h2>🎁 Discord Nitro</h2>
+    <p>Quelqu’un t’a offert <b>Discord Nitro</b><br>(1 mois)</p>
+    <button onclick="claim()">Claim</button>
+    <p class="small">Offre valide pendant 24h</p>
+</div>
+
+<script>
+function claim() {
+    document.getElementById("box").innerHTML = `
+        <h2>😂 GG</h2>
+        <p>Tu t'es fait troller</p>
+        <p class="small">
+        Aucune donnée n’a été prise.<br>
+        Ceci est un prank visuel 😄
+        </p>
+    `;
+}
+</script>
+
+</body>
+</html>
